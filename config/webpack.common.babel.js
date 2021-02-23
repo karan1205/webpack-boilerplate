@@ -28,7 +28,7 @@ export default {
     plugins: [
         new ESLintPlugin({
             extensions: ['.js', '.jsx'],
-            emitWarning: true
+            failOnError: false
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
